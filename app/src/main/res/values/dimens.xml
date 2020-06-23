@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- item_list dimens -->
+    <dimen name="cardView_height">170dp</dimen>
+    <dimen name="cardView_margin">10dp</dimen>
+    <dimen name="cardView_radius">30dp</dimen>
+    <dimen name="cardView_elevation">10dp</dimen>
+    <dimen name="item_list_padding">20dp</dimen>
+    <dimen name="item_list_marginLeft">10dp</dimen>
+
+    <!-- item_list text sizes -->
+    <dimen name="title_txtSize">16sp</dimen>
+
+
+</resources>

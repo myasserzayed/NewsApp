@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg_color">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/cardView_height"
+        android:layout_margin="@dimen/cardView_margin"
+        app:cardBackgroundColor="@color/cardView_bg_color"
+        app:cardCornerRadius="@dimen/cardView_radius"
+        app:cardElevation="@dimen/cardView_elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:padding="@dimen/item_list_padding">
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/title"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/title_txtSize" />
+
+            <TextView
+                android:id="@+id/news_title_detailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/item_list_marginLeft"
+                android:layout_marginLeft="@dimen/item_list_marginLeft"
+                android:layout_toEndOf="@id/news_title"
+                android:layout_toRightOf="@id/news_title"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/title_color"
+                android:textSize="@dimen/title_txtSize" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/news_title_detailed"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/author"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/title_txtSize" />
+
+            <TextView
+                android:id="@+id/author_detailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/news_title_detailed"
+                android:layout_marginStart="@dimen/item_list_marginLeft"
+                android:layout_marginLeft="@dimen/item_list_marginLeft"
+                android:layout_toEndOf="@id/author"
+                android:layout_toRightOf="@id/author"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/title_txtSize" />
+
+            <TextView
+                android:id="@+id/section_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author_detailed"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/section"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/title_txtSize" />
+
+            <TextView
+                android:id="@+id/section_name_detailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author_detailed"
+                android:layout_marginStart="@dimen/item_list_marginLeft"
+                android:layout_marginLeft="@dimen/item_list_marginLeft"
+                android:layout_toEndOf="@id/section_name"
+                android:layout_toRightOf="@id/section_name"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/title_txtSize" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/section_name_detailed"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/date"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/title_txtSize" />
+
+            <TextView
+                android:id="@+id/date_detailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/section_name_detailed"
+                android:layout_marginStart="@dimen/item_list_marginLeft"
+                android:layout_marginLeft="@dimen/item_list_marginLeft"
+                android:layout_toEndOf="@id/date"
+                android:layout_toRightOf="@id/date"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/title_txtSize" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_detailed"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/time"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/title_txtSize" />
+
+            <TextView
+                android:id="@+id/time_detailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_detailed"
+                android:layout_marginStart="@dimen/item_list_marginLeft"
+                android:layout_marginLeft="@dimen/item_list_marginLeft"
+                android:layout_toEndOf="@id/time"
+                android:layout_toRightOf="@id/time"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/title_txtSize" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
